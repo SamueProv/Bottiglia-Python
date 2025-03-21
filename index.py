@@ -12,7 +12,7 @@ print(b)
 b.svuota(600) 
 print(b)
 
-b2 = BottigliaconTappo
+b2 = BottigliaconTappo(500)
 print(b2)
 b2.chiudi()
 print(b2)

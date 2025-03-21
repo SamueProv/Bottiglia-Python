@@ -23,11 +23,12 @@ class BottigliaconTappo(Bottiglia): #eredita sottoclasse bottiglia
         self.aperta = True
     def apri(self):
         self.aperta = True
+        
     def chiudi(self):
-        self.chiudi = False
+        self.aperta = False
     def __str__(self):
         return super().__str__() + f" aperta: {self.aperta}"
     
     def riempi(self, q):
         if self.aperta:
-        super().riempi(q)
+            super().riempi(q)
